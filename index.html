@@ -5,63 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <body>
     <script href="app.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
-    <button type="button" class="btn btn-primary">Кнопка</button>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <button type="button" class="btn btn-success">Кнопка</button>
     <link rel="stylesheet" href="css/style.css">
-
-    <div class="container">
-        <div class="row">
-          <div class="col box box-1">Контейнер</div>
-        </div>
+    <button type="button" class="btn btn-primary">Кнопка</button>
+    <button type="button" class="btn btn-success">Успешно</button>
+    <button type="button" class="btn btn-danger">Ошибка</button>
+    <button type="button" class="btn btn-outline-info">Информация</button>
+    <button type="button" class="btn btn-secondary btn-lg">Большая кнопка</button>
+    <button type="button" class="btn btn-warning btn-sm">Предупреждение</button>
+    <button type="button" class="btn btn-dark btn-lg btn-block">Темная кнопка</button>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Главная</a></li>
+      <li class="breadcrumb-item"><a href="#">Фрукты</a></li>
+      <li class="breadcrumb-item active">Груши</li>
+    </ul>
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Строительство и ремонт</a></li>
+      <li class="breadcrumb-item"><a href="#">Инструменты</a></li>
+      <li class="breadcrumb-item"><a href="#">Электроинструменты</a></li>
+      <li class="breadcrumb-item active">Перфараторы</li>
+    </ul>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        О нас
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Наша история</a>
+        <a class="dropdown-item" href="#">Наша команда</a>
+        <a class="dropdown-item" href="#">Контакты</a>
       </div>
-
-<div class="container">
-  <div class="row">
-    <div class="col box box-1">Левая колонка</div>
-    <div class="col box box-2">Правая колонка</div>
+    </div>
+    <div class="alert alert-success">Уведомление об успехе</div>
+    <div class="alert alert-success">
+      <strong>Поздравляем!</strong> Вы зарегистрировались на <a href="#" class="alert-link">сайте</a>!
+    </div>
+    <div class="alert alert-success">
+      <h4 class="alert-heading">Отлично сработано!</h4>
+      <p>О да, Вы успешно прочитали это важное предупреждающее сообщение. Этот пример текста будет длиться немного дольше, чтобы Вы могли увидеть, как интервалы в предупреждении работают с этим типом контента.</p>
+      <hr>
+      <p>Когда Вам нужно, обязательно используйте маржинальные утилиты, чтобы все было в порядке и порядке.</p>
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show">
+      <strong>Внимание!</strong> Вам следует проверить некоторые из этих полей.
+      <button class="close" data-dismiss="alert">
+        <span>&times;</span>
+      </button>
+    </div>
+    <a data-toggle="collapse" href="#footwear">Обувь</a>
+    <div class="collapse" id="footwear">
+      <p>Обувь относится к предметам одежды для ног, изначально служит для защиты от 
+        неблагоприятных воздействий окружающей среды, обычно в отношении поверхности 
+        и температуры.</p>
+    </div>
+    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#footwear"
+  aria-expanded="false" aria-controls="footwear">Обувь</button>
+<div class="collapse" id="footwear">
+  <p>Обувь относится к предметам одежды для ног, изначально служит для защиты от 
+    неблагоприятных воздействий окружающей среды, обычно в отношении поверхности 
+    и температуры.</p>
+</div>
+<div id="faq">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">
+        <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+          Что если ботинки большие для моих ног?
+        </a>
+     </h5>
+    </div>
+    <div id="answerOne" class="collapse show">
+     <div class="card-body">
+       Набейте ботинки газетами или салфетками.
+     </div>
+    </div>
   </div>
 </div>
+<div id="faq">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">
+        <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+          Могу я носить ботинки в помещение?
+        </a>
+     </h5>
+    </div>
+    <div id="faq">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">
+            <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
+              Что делать если ботинки скользят при намокании?
+            </a>
+         </h5>
+        </div>
 
-<div class="container">
-    <div class="row">
-      <div class="col box box-1">Левая колонка</div>
-      <div class="col box box-2">Центральная колонка</div>
-      <div class="col box box-3">Правая колонка</div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-6 box box-1">
-        .col-6
-      </div>
-      <div class="col-4 box box-2">
-        .col-4
-      </div>
-      <div class="col-2 box box-3">
-        .col-2
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="box box-1 col-12">1</div>
-    <div class="box box-2 col-12">2</div>
-    <div class="box box-3 col-12">3</div>
-    <div class="box box-4 col-12">4</div>
-    <div class="box box-5 col-12">5</div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="box box-1 col-12 col-sm-6 col-md-4 col-xl">1</div>
-      <div class="box box-2 col-12 col-sm-6 col-md-4 col-xl">2</div>
-      <div class="box box-3 col-12 col-sm-6 col-md-4 col-xl">3</div>
-      <div class="box box-4 col-12 col-sm-6 col-md-6 col-xl">4</div>
-      <div class="box box-5 col-12 col-sm-12 col-md-6 col-xl">5</div>
-    </div>
-  </div>
+
+
 
 </body>
 </html>
