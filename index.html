@@ -5,108 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 <body>
     <script href="app.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <button type="button" class="btn btn-primary">Кнопка</button>
-    <button type="button" class="btn btn-success">Успешно</button>
-    <button type="button" class="btn btn-danger">Ошибка</button>
-    <button type="button" class="btn btn-outline-info">Информация</button>
-    <button type="button" class="btn btn-secondary btn-lg">Большая кнопка</button>
-    <button type="button" class="btn btn-warning btn-sm">Предупреждение</button>
-    <button type="button" class="btn btn-dark btn-lg btn-block">Темная кнопка</button>
-    <ul class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Главная</a></li>
-      <li class="breadcrumb-item"><a href="#">Фрукты</a></li>
-      <li class="breadcrumb-item active">Груши</li>
-    </ul>
-    <ul class="breadcrumb">
-      <li class="breadcrumb-item"><a href="#">Строительство и ремонт</a></li>
-      <li class="breadcrumb-item"><a href="#">Инструменты</a></li>
-      <li class="breadcrumb-item"><a href="#">Электроинструменты</a></li>
-      <li class="breadcrumb-item active">Перфараторы</li>
-    </ul>
-    <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        О нас
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">Наша история</a>
-        <a class="dropdown-item" href="#">Наша команда</a>
-        <a class="dropdown-item" href="#">Контакты</a>
+    <div class="jumbotron">
+      <h1>Справочник начальной загрузки</h1>
+      <p>Bootstrap является наиболее популярной платформой HTML, CSS и JS для разработки адаптивных, мобильных первых проектов в Интернете.</p>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Jumbotron на всю ширину</h1>
+        <p class="lead">Это модифицированный jumbotron, который занимает все горизонтальное пространство своего родителя.</p>
       </div>
     </div>
-    <div class="alert alert-success">Уведомление об успехе</div>
-    <div class="alert alert-success">
-      <strong>Поздравляем!</strong> Вы зарегистрировались на <a href="#" class="alert-link">сайте</a>!
-    </div>
-    <div class="alert alert-success">
-      <h4 class="alert-heading">Отлично сработано!</h4>
-      <p>О да, Вы успешно прочитали это важное предупреждающее сообщение. Этот пример текста будет длиться немного дольше, чтобы Вы могли увидеть, как интервалы в предупреждении работают с этим типом контента.</p>
-      <hr>
-      <p>Когда Вам нужно, обязательно используйте маржинальные утилиты, чтобы все было в порядке и порядке.</p>
-    </div>
-    <div class="alert alert-warning alert-dismissible fade show">
-      <strong>Внимание!</strong> Вам следует проверить некоторые из этих полей.
-      <button class="close" data-dismiss="alert">
-        <span>&times;</span>
+    <ul class="nav">
+      <li class="nav-item"><a class="nav-link active" href="#">HTML</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">CSS</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">JavaScript</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Просмотр</a></li>
+    </ul>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">Логотип</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+        <span class="navbar-toggler-icon"></span>
       </button>
-    </div>
-    <a data-toggle="collapse" href="#footwear">Обувь</a>
-    <div class="collapse" id="footwear">
-      <p>Обувь относится к предметам одежды для ног, изначально служит для защиты от 
-        неблагоприятных воздействий окружающей среды, обычно в отношении поверхности 
-        и температуры.</p>
-    </div>
-    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#footwear"
-  aria-expanded="false" aria-controls="footwear">Обувь</button>
-<div class="collapse" id="footwear">
-  <p>Обувь относится к предметам одежды для ног, изначально служит для защиты от 
-    неблагоприятных воздействий окружающей среды, обычно в отношении поверхности 
-    и температуры.</p>
-</div>
-<div id="faq">
-  <div class="card">
-    <div class="card-header">
-      <h5 class="card-title">
-        <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
-          Что если ботинки большие для моих ног?
-        </a>
-     </h5>
-    </div>
-    <div id="answerOne" class="collapse show">
-     <div class="card-body">
-       Набейте ботинки газетами или салфетками.
-     </div>
-    </div>
-  </div>
-</div>
-<div id="faq">
-  <div class="card">
-    <div class="card-header">
-      <h5 class="card-title">
-        <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
-          Могу я носить ботинки в помещение?
-        </a>
-     </h5>
-    </div>
-    <div id="faq">
-      <div class="card">
-        <div class="card-header">
-          <h5 class="card-title">
-            <a data-toggle="collapse" data-parent="#faq" href="#answerOne">
-              Что делать если ботинки скользят при намокании?
-            </a>
-         </h5>
-        </div>
-
-
-
+      <div class="collapse navbar-collapse" id="nav-content">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Главня</a>
+          <li class="nav-item"><a class="nav-link" href="#">Услуги</a>
+          <li class="nav-item"><a class="nav-link" href="#">О Нас</a>
+          <li class="nav-item"><a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#">
+            <span>&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">6</a></li>
+        <li class="page-item"><a class="page-link" href="#">7</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">
+            <span>&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <h4>25 советов при создании сайта <span class="badge badge-primary">Новое</span></h4>
+    <h4>Вам пришло одно <span class="badge badge-pill badge-info">сообщение</span></h4>
+    <div class="spinner-border"></div>
+    <div class="spinner-border text-success"></div>
+    <div class="spinner-grow text-warning"></div>
 
 </body>
 </html>
